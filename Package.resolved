@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Ufos",
+        "repositoryURL": "https://github.com/ioseng42/Ufos.git",
+        "state": {
+          "branch": null,
+          "revision": "6ec0a44c00577b549e079afdca1da17fe990f623",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
