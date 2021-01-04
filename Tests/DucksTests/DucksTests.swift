@@ -32,14 +32,13 @@ extension Action {
 }
 
 let reducer: Reducer<State> = { state, action in
+    guard let action = action as? Action else { return state }
     var state = state
-    switch (action as? Action) {
-    case let .up(value)?:
+    switch (action) {
+    case let .up(value):
         state.counter += value
-    case let .down(value)?:
+    case let .down(value):
         state.counter -= value
-    default:
-        break
     }
     return state
 }
